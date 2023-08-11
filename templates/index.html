@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Questionário</title>
+</head>
+<body>
+    <h1>TESTE ÁGNER</h1>
+    <form  method="post">
+        <label for="answer1">Qual o nome do subdomínio?</label>
+        <input type="text" name="answer1" required><br>
+        <label for="answer2">Qual o TTL em segundos?</label>
+        <input type="text" name="answer2" required><br>
+        <label for="answer3">Qual a nome da zona de cadastro?</label>
+        <input type="text" name="answer3" required><br>
+        <label for="answer4">Qual o Grupo de Recurso?</label>
+        <input type="text" name="answer4" required><br>
+        <button type="submit">Enviar Respostas</button>
+    </form>
+  
+</body>
+
+<script>
+    function executarShell() {
+        // Realizar uma solicitação ao servidor para executar o arquivo shell
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/executar" , true);
+        xhr.send();
+    }
+
+//    document.getElementById('meuForm').addEventListener('submit', function() {
+  //      // Lógica para redirecionar à página inicial após o recarregamento
+ //       window.addEventListener('beforeunload', function() {
+ //           window.location.href = 'executar'; // Substitua pela sua URL
+ //       });
+ //   });
+
+
+</script>
+</html>
